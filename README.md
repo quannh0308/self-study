@@ -1,1 +1,1 @@
-# algorithm-java
+# self-study
