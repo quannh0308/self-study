@@ -9,6 +9,7 @@
         <module name="algorithm" />
         <module name="datasciencetemp" />
         <module name="docs" />
+        <module name="hackerank" />
         <module name="sql" />
       </profile>
     </annotationProcessing>
