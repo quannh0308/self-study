@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="datasciencetemp" />
         <module name="algorithm" />
-        <module name="sql" />
+        <module name="datasciencetemp" />
         <module name="docs" />
+        <module name="for-interview-candidates" />
         <module name="hackerank" />
+        <module name="sql" />
       </profile>
     </annotationProcessing>
   </component>
