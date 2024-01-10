@@ -1,7 +1,5 @@
 package com.quannh.connectedcellsinagrid;
 
-import javafx.util.Pair;
-
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -17,7 +15,7 @@ public class Solution {
         int max = 0;
         int current = 0;
         do {
-            Pair<Integer, Integer> firstNotZero = getFirstNotZero(matrix, n, m);
+            Map.Entry<Integer, Integer> firstNotZero = getFirstNotZero(matrix, n, m);
             int r = firstNotZero.getKey();
             int c = firstNotZero.getValue();
             if(r == n || c == m)
@@ -65,15 +63,15 @@ public class Solution {
         return returnValue;
     }
 
-    private static Pair<Integer, Integer> getFirstNotZero(int[][] matrix, int row, int col) {
+    private static Map.Entry<Integer, Integer> getFirstNotZero(int[][] matrix, int row, int col) {
         for(int i = 0; i < row; i++)
             for(int j = 0; j < col; j++) {
                 if(matrix[i][j] != 0) {
-                    return new Pair<>(i,j);
+                    return Map.entry(i,j);
 
                 }
             }
-        return new Pair(row, col);
+        return Map.entry(row, col);
 
     }
 

@@ -2,7 +2,7 @@ package com.quannh.paradigm.dynamic;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        int N = 9;
+        int N = 90;
         System.out.println("Fibonnaci(" + N + ") = " + fib(N));
     }
 
